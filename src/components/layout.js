@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import { indigo800 } from 'material-ui/styles/colors'; //#283593
+import { cyan500 } from 'material-ui/styles/colors';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import { Link } from 'react-router';
@@ -19,11 +20,11 @@ import NavigationClose from 'material-ui/svg-icons/navigation/close';
 
 const muiTheme = getMuiTheme({
   palette: {
-    textColor: indigo800,
+    textColor: cyan500,
   },
   appBar: {
-    color: indigo800,
-    height: 50,
+    color: cyan500,
+    height: 75,
   },
 });
 
@@ -58,11 +59,31 @@ export default class Layout extends Component {
       isLoggedIn: false,
       menuItems: [
         {path: '/', title: 'Home'},
-        {path: '/quiz', title: 'Quiz'},
-        {path: '/analysis', title: 'Analysis'},
-        {path: '/references', title: 'References'}
-      ]
+        {path: '/quiz', title: 'Your Tests'},
+        {path: '/customize', title: 'Cusomize'},
+        {path: '/analyze', title: 'Analyze'}
+      ],
     }
+    this.getQuestion = this.getQuestion.bind(this);
+  }
+
+  changeAnswers(key, value){
+    temp = this.state.answers;
+    temp.key = value; 
+    this.setState({answers: newAnswers});
+
+  }
+
+  incrementQuestion(){
+    this.setState({currentQuestion: this.state.currentQuestion+1});
+  }
+
+  resetQuestions(){
+    this.setState({currentQuestion: 0});
+  }
+
+  getQuestion(){
+    return this.state.currentQuestion;
   }
 
   // Shows/Hides the left hand side drawer onClick
@@ -90,7 +111,7 @@ export default class Layout extends Component {
       <MuiThemeProvider muiTheme={muiTheme}>
         <div>
           <AppBar
-            title='Centiment'
+            title='CogTO'
             iconElementRight={this.state.logged ? <Logged /> : <Login />}
             onLeftIconButtonTouchTap={() => this.toggleDrawer()}
             onTitleTouchTap={() => this.setState({isDrawerVisible: false})}

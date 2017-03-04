@@ -7,7 +7,7 @@ const HomePage = () => {
 		<DocumentTitle title="Home">
 			<div>
 				<Jumbotron style={{'paddingLeft': '30px', 'paddingRight':'30px'}}>
-					<h1>Do you want to make cents?</h1>
+					<h1>Toronto Cognitive Assessment</h1>
 					<div style={{marginTop: '3em'}}className="row">
 						<div className="col-md-4">
 							<img className="img-responsive jumbotron-image" src="https://coronadotimes.com/wp-content/uploads/2016/06/ascending-graph.png"  />

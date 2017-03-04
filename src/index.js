@@ -8,9 +8,12 @@ import HomePage from './components/pages/homePage';
 import QuizPage from './components/pages/quizPage';
 import LoginPage from './components/pages/loginPage';
 import SignupPage from './components/pages/signupPage';
-import AnalysisPage from './components/pages/analysisPage';
 import ReferencePage from './components/pages/referencePage';
 import CongratsPage from './components/pages/congratsPage';
+import OnePage from './components/pages/onePage';
+import TwoPage from './components/pages/twoPage';
+
+console.log({Layout});
 
 ReactDOM.render(
   <Router history={browserHistory}>
@@ -18,10 +21,8 @@ ReactDOM.render(
       <Route path="/" component={HomePage}></Route>
       <Route path="/quiz" component={QuizPage}></Route>
       <Route path="/login" component={LoginPage}></Route>
-      <Route path="/signup" component={SignupPage}></Route>
-      <Route path="/analysis" component={AnalysisPage}></Route>
-      <Route path="/references" component={ReferencePage}></Route>
-      <Route path="/congrats" component={CongratsPage}></Route>
+      <Route path="/one" component={OnePage}></Route>
+      <Route path="/two/:qid" component={TwoPage}></Route>
     </Route>
   </Router>
   , document.getElementById('root'));
