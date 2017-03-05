@@ -17,33 +17,33 @@ const styles = {
 const tableData = [
   {
     name: 'John Smith',
-    status: 'Employed',
+    status: 'Patient',
     selected: true,
   },
   {
     name: 'Randal White',
-    status: 'Unemployed',
+    status: 'Patient',
   },
   {
     name: 'Stephanie Sanders',
-    status: 'Employed',
+    status: 'Patient',
     selected: true,
   },
   {
     name: 'Steve Brown',
-    status: 'Employed',
+    status: 'Patient',
   },
   {
     name: 'Joyce Whitten',
-    status: 'Employed',
+    status: 'Patient',
   },
   {
     name: 'Samuel Roberts',
-    status: 'Employed',
+    status: 'Patient',
   },
   {
     name: 'Adam Moore',
-    status: 'Employed',
+    status: 'Patient',
   },
 ];
 
@@ -82,7 +82,7 @@ export default class AnalyzePage extends Component {
 		            enableSelectAll={this.state.enableSelectAll}
 		          >
 		            <TableRow>
-		              <TableHeaderColumn colSpan="3" tooltip="Super Header" style={{textAlign: 'center'}}>
+		              <TableHeaderColumn colSpan="3" tooltip="Patient Assessments" style={{textAlign: 'center'}}>
 		                Super Header
 		              </TableHeaderColumn>
 		            </TableRow>
@@ -106,20 +106,6 @@ export default class AnalyzePage extends Component {
 		              </TableRow>
 		              ))}
 		          </TableBody>
-		          <TableFooter
-		            adjustForCheckbox={this.state.showCheckboxes}
-		          >
-		            <TableRow>
-		              <TableRowColumn>ID</TableRowColumn>
-		              <TableRowColumn>Name</TableRowColumn>
-		              <TableRowColumn>Status</TableRowColumn>
-		            </TableRow>
-		            <TableRow>
-		              <TableRowColumn colSpan="3" style={{textAlign: 'center'}}>
-		                Super Footer
-		              </TableRowColumn>
-		            </TableRow>
-		          </TableFooter>
 		        </Table>
 			</DocumentTitle>
 		)

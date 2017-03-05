@@ -17,7 +17,7 @@ export default class ReadyPage extends Component {
 
 					<div className="row" style={{'marginTop': '50px'}}>
 						<div className="text-center">
-							<FlatButton backgroundColor="#29B6F6" label="Done" labelStyle={{'color':'white'}} onClick={()=>browserHistory.push('/thanks')} />
+							<FlatButton backgroundColor="#29B6F6" label="Done" labelStyle={{'color':'white'}} onClick={()=>browserHistory.push('/one')} />
 						</div>
 					</div>
 				</div>

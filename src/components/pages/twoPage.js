@@ -59,7 +59,7 @@ export default class TwoPage extends Component {
 
 					<div className="row" style={{'marginTop': '50px'}}>
 						<div className="text-center">
-							<FlatButton backgroundColor="cyan500" label="Done" onClick={()=>browserHistory.push('/two')} />
+							<FlatButton backgroundColor="cyan500" label="Done" onClick={()=>browserHistory.push('/three')} />
 						</div>
 					</div>
 				</div>
