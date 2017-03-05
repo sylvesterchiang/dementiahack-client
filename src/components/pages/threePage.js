@@ -12,8 +12,8 @@ export default class ThreePage extends Component {
 					<div className="row">
 						<div className="col-md-offset-0 col-md-12">
 							<div className="text-center">
-								<h1 style={{'fontSize': '70px'}}>Question Two: Naming</h1>
-								<h2 style={{'fontSize': '50px'}}>Name the object or animal you see.</h2>
+								<h1 style={{'fontSize': '50px'}}>Question Two: Naming</h1>
+								<h2 style={{'fontSize': '30px'}}>Name the object or animal you see.</h2>
 							</div>
 						</div>
 					</div>

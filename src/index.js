@@ -17,6 +17,7 @@ import ThreePage from './components/pages/ThreePage';
 import ThanksPage from './components/pages/ThanksPage';
 import AnalyzePage from './components/pages/AnalyzePage';
 import VisualizePage from './components/pages/VisualizePage';
+import FourPage from './components/pages/FourPage';
 
 ReactDOM.render(
   <Router history={browserHistory}>
@@ -32,6 +33,7 @@ ReactDOM.render(
       <Route path="/thanks" component={ThanksPage}></Route>
       <Route path="/analyze" component={AnalyzePage}></Route>
       <Route path="/visualize" component={VisualizePage}></Route>
+      <Route path="/four" component={FourPage}></Route>
     </Route>
   </Router>
   , document.getElementById('root'));

@@ -24,7 +24,7 @@ const muiTheme = getMuiTheme({
   },
   appBar: {
     color: cyan500,
-    height: 100,
+    height: 75,
   },
 });
 
