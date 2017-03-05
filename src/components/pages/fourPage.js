@@ -10,7 +10,7 @@ export default class FourPage extends Component {
 	constructor(){
 		super();
 		this.state ={
-			countLeft: 8
+			countLeft: 6
 		}
 	}
 
@@ -26,9 +26,9 @@ export default class FourPage extends Component {
 					<div className="row">
 						<div className="col-md-offset-2 col-md-8">
 							<div className="text-center">
-								<h1 style={{'fontSize': '70px'}}>Question One: Visual</h1>
+								<h1 style={{'fontSize': '70px', 'color':'#9C27B0'}}>Question One: Visual</h1>
 								<h2 style={{'fontSize': '40px'}}>Trace out the characters in the order:</h2>
-								<div style={{'fontSize': '50px', 'color':"#29B6F6"}}>1-A-2-B-3-C-4-D.</div>
+								<div style={{'fontSize': '50px', 'color':"#29B6F6"}}>1-A-2-B-3-C-4-D. <img height='50px' src='../../../img/audio.png' /></div>
 							</div>
 						</div>
 					</div>
@@ -48,7 +48,7 @@ export default class FourPage extends Component {
 					</div>
 					<div className="row" style={{"marginTop":"20px"}}>
 						<div className="text-center">
-							<FlatButton backgroundColor="#29B6F6" label={this.state.countLeft == 0 ? "DONE": "NOT YET"} style={{'height': '70px', 'borderRadius': '10px'}} labelStyle={{'color':'white', 'fontSize': '80px'}} onClick={()=>browserHistory.push('/two')} />
+							<FlatButton backgroundColor="#29B6F6" label={this.state.countLeft == 0 ? "DONE": "NOT YET"} style={{'height': '70px', 'borderRadius': '10px'}} labelStyle={{'color':'white', 'fontSize': '80px'}} onClick={()=>browserHistory.push('/one')} />
 						</div>
 					</div>
 				</div>

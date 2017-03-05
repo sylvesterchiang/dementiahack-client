@@ -12,13 +12,14 @@ export default class OnePage extends Component {
 
 	render() {
 		return (
-			<DocumentTitle title="Question One">
+			<DocumentTitle title="Question Two">
 				<div className="container">
 					<div className="row">
 						<div className="col-md-offset-0 col-md-12">
 							<div className="text-center">
-								<h1 style={{'fontSize': '80px'}}>Question One: Memory Recall</h1>
-								<h2 style={{'fontSize': '60px'}}>Try to memorize these words!</h2>
+								<h1 style={{'fontSize': '80px', 'color':'#FF5722'}}>Question One: Memory Recall</h1>
+								<h2 style={{'fontSize': '60px'}}>Try to memorize these words! </h2>
+								<img height='50px' src='../../../img/audio.png' />
 							</div>
 						</div>
 					</div>

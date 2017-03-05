@@ -42,7 +42,8 @@ export default class TwoPage extends Component {
 						<div className="col-md-offset-0 col-md-12">
 							<div className="text-center">
 								<h1 style={{'fontSize': '80px'}}>Recall the words.</h1>
-								<h2 style={{'fontSize': '50px'}}>Check the words you remember from the last page.</h2>
+								<h2 style={{'fontSize': '50px'}}>Check the words you remember from the last page. </h2>
+								<img height='50px' src='../../../img/audio.png' />
 							</div>
 						</div>
 					</div>
