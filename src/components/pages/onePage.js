@@ -18,8 +18,8 @@ export default class OnePage extends Component {
 						<div className="col-md-offset-3 col-md-6">
 							<div className="text-center">
 								<h1>Question One: Memory Recall</h1>
-								<h4>Here are a list of words that will appear on the screen, study them and you will
-								be asked to recall them on the next page.</h4>
+								<h2>Here are a list of words that will appear on the screen, study them and you will
+								be asked to recall them on the next page.</h2>
 							</div>
 						</div>
 					</div>

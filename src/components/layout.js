@@ -59,8 +59,8 @@ export default class Layout extends Component {
       isLoggedIn: false,
       menuItems: [
         {path: '/', title: 'Home'},
-        {path: '/quiz', title: 'Your Tests'},
-        {path: '/customize', title: 'Cusomize'},
+        {path: '/ready', title: 'Your Tests'},
+        {path: '/customize', title: 'Customize'},
         {path: '/analyze', title: 'Analyze'}
       ],
     }
