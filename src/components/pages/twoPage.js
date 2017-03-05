@@ -39,10 +39,10 @@ export default class TwoPage extends Component {
 			<DocumentTitle title="Question Two">
 				<div className="container">
 					<div className="row" style={{'marginBottom': '50px'}}>
-						<div className="col-md-offset-3 col-md-6">
+						<div className="col-md-offset-0 col-md-12">
 							<div className="text-center">
-								<h1>Recall the words.</h1>
-								<h2>Check the words you remember from the last page.</h2>
+								<h1 style={{'fontSize': '80px'}}>Recall the words.</h1>
+								<h2 style={{'fontSize': '50px'}}>Check the words you remember from the last page.</h2>
 							</div>
 						</div>
 					</div>
@@ -50,8 +50,8 @@ export default class TwoPage extends Component {
 					<div className="row text-center">
 					     {this.state.options.map((user, i)=>{
 					        return (
-					        	<div className="col-md-2 text-center" key={i} style={{'marginTop': '30px'}}>
-					       			<FlatButton label={user} onClick={()=>this.toggleSelected(i)} backgroundColor={this.state.isSelected[i] == 0 ? 'white': '#EF5350'} labelStyle={{fontSize:'40px'}} style={{height:'40px'}}></FlatButton>
+					        	<div className="col-md-2 text-center" key={i} style={{'marginTop': '20px'}}>
+					       			<FlatButton label={user} onClick={()=>this.toggleSelected(i)} backgroundColor={this.state.isSelected[i] == 0 ? 'white': '#EF5350'} labelStyle={{fontSize:'40px'}} style={{height:'50px'}}></FlatButton>
 					     		</div>
 					     	)
 					     })}
@@ -59,7 +59,7 @@ export default class TwoPage extends Component {
 
 					<div className="row" style={{'marginTop': '50px'}}>
 						<div className="text-center">
-							<FlatButton backgroundColor="cyan500" label="Done" onClick={()=>browserHistory.push('/three')} />
+							<FlatButton backgroundColor="#29B6F6" label="DONE" style={{'height': '70px', 'borderRadius': '10px'}} labelStyle={{'color':'white', 'fontSize': '80px'}} onClick={()=>browserHistory.push('/three')} />
 						</div>
 					</div>
 				</div>

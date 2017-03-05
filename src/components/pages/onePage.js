@@ -15,24 +15,26 @@ export default class OnePage extends Component {
 			<DocumentTitle title="Question One">
 				<div className="container">
 					<div className="row">
-						<div className="col-md-offset-3 col-md-6">
+						<div className="col-md-offset-0 col-md-12">
 							<div className="text-center">
-								<h1>Question One: Memory Recall</h1>
-								<h2>Here are a list of words that will appear on the screen, study them and you will
-								be asked to recall them on the next page.</h2>
+								<h1 style={{'fontSize': '80px'}}>Question One: Memory Recall</h1>
+								<h2 style={{'fontSize': '60px'}}>Try to memorize these words!</h2>
 							</div>
 						</div>
 					</div>
 
-					<div className="row text-center" style={{fontSize:'40px'}}>FACE</div>
-					<div className="row text-center" style={{fontSize:'40px'}}>VIOLET</div>
-					<div className="row text-center" style={{fontSize:'40px'}}>CHURCH</div>
-					<div className="row text-center" style={{fontSize:'40px'}}>DAISY </div>
-					<div className="row text-center" style={{fontSize:'40px'}}>RED</div>
-
 					<div className="row">
+						<div className="col-md-4 text-center" style={{fontSize:'70px', 'color':'#d32f2f'}}>FACE</div>
+						<div className="col-md-4 text-center" style={{fontSize:'70px', 'color':'#d32f2f'}}>VIOLET</div>
+						<div className="col-md-4 text-center" style={{fontSize:'70px', 'color':'#d32f2f'}}>CHURCH</div>
+						<div className="col-md-4 text-center" style={{fontSize:'70px', 'color':'#d32f2f'}}>DAISY </div>
+						<div className="col-md-4 text-center" style={{fontSize:'70px', 'color':'#d32f2f'}}>BLUE</div>
+						<div className="col-md-4 text-center" style={{fontSize:'70px', 'color':'#d32f2f'}}>HOUSE</div>
+					</div>
+					
+					<div className="row" style={{"marginTop":"40px"}}>
 						<div className="text-center">
-							<FlatButton backgroundColor="cyan500" label="Ready" onClick={()=>browserHistory.push('/two')} />
+							<FlatButton backgroundColor="#29B6F6" label="READY" style={{'height': '70px', 'borderRadius': '10px'}} labelStyle={{'color':'white', 'fontSize': '80px'}} onClick={()=>browserHistory.push('/two')} />
 						</div>
 					</div>
 				</div>

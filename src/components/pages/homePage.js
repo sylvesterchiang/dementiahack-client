@@ -11,15 +11,15 @@ const HomePage = () => {
 					<div style={{marginTop: '3em'}}className="row">
 						<div className="col-md-4">
 							<img className="img-responsive jumbotron-image" src="https://coronadotimes.com/wp-content/uploads/2016/06/ascending-graph.png"  />
-							<p>Performance metrics tracking on  top news and social media content</p>
+							<p>Metadata on cognitive assessments</p>
 						</div>
 						<div className="col-md-4">
 							<img className="img-responsive jumbotron-image"  src="https://www.deepcoredata.com/wp-content/uploads/2016/06/small_1420.png"  />
-							<p>Sentiment Analysis of data using our robust machine learning algorithm</p>
+							<p>Big data for machine learning algorithm</p>
 						</div>
 						<div className="col-md-4">
 							<img className="img-responsive jumbotron-image" src="http://bav0.com/wp-content/uploads/sites/11/2014/06/pie-chart.png" />
-							<p>Portfolio optimization and financial literacy to help any beginner investor make smarter choices</p>
+							<p>Streamlined data collection for improved clinical outcomes</p>
 						</div>
 					</div>
 				</Jumbotron>

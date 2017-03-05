@@ -24,7 +24,7 @@ const muiTheme = getMuiTheme({
   },
   appBar: {
     color: cyan500,
-    height: 75,
+    height: 100,
   },
 });
 
@@ -98,7 +98,7 @@ export default class Layout extends Component {
     return this.state.menuItems.map((item, i) => {
       return (
         <Link to={item.path} key={i} onTouchTap={() => this.toggleDrawer()}>
-          <MenuItem>{item.title}</MenuItem>
+          <MenuItem style={{'fontSize': '30px'}}>{item.title}</MenuItem>
         </Link>
       )
     });

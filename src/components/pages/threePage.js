@@ -10,10 +10,10 @@ export default class ThreePage extends Component {
 			<DocumentTitle title="Question Three">
 				<div className='container'>
 					<div className="row">
-						<div className="col-md-offset-3 col-md-6">
+						<div className="col-md-offset-0 col-md-12">
 							<div className="text-center">
-								<h1>Question Two: Naming</h1>
-								<h2>Name the object or animal you see.</h2>
+								<h1 style={{'fontSize': '70px'}}>Question Two: Naming</h1>
+								<h2 style={{'fontSize': '50px'}}>Name the object or animal you see.</h2>
 							</div>
 						</div>
 					</div>
@@ -35,7 +35,7 @@ export default class ThreePage extends Component {
 
 					<div className="row">
 						<div className="col-md-4">
-							<TextField hintText='question one' fullWidth={true} />
+							<TextField hintText='question one' inputStyle={{'fontSize': '30px'}} fullWidth={true} />
 						</div>
 						<div className="col-md-4">
 							<TextField hintText='question two' fullWidth={true} />
@@ -47,7 +47,7 @@ export default class ThreePage extends Component {
 				
 					<div className="row" style={{'marginTop': '50px'}}>
 						<div className="text-center">
-							<FlatButton backgroundColor="cyan500" label="Done" onClick={()=>browserHistory.push('/thanks')} />
+							<FlatButton backgroundColor="#29B6F6" label="DONE" style={{'height': '70px', 'borderRadius': '10px'}} labelStyle={{'color':'white', 'fontSize': '80px'}} onClick={()=>browserHistory.push('/thanks')} />
 						</div>
 					</div>
 				</div>
